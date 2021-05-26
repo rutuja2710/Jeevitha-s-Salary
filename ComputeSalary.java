@@ -14,8 +14,7 @@ public class ComputeSalary {
             hoursWorked[i] = scanner.nextInt();
 
         //salary on Sunday - 50% bonus
-        if(hoursWorked[0]>0)
-            salary+=hoursWorked[0]*150;
+        salary+=hoursWorked[0]*150;
 
         //salary from Monday to Friday
         for(int i=1;i<hoursWorked.length-1;i++) {
@@ -28,8 +27,7 @@ public class ComputeSalary {
         }
 
         //salary on Saturday - 25% bonus
-        if(hoursWorked[6]>0)
-            salary+=hoursWorked[6]*125;
+        salary+=hoursWorked[6]*125;
 
         //extra 25 for hours beyond 40
         if(totalHours>40)
